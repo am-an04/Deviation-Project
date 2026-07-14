@@ -1,0 +1,116 @@
+[
+    {
+        "step": 1,
+        "title": "Document Received & Ingested",
+        "status": "completed",
+        "timestamp": "2026-07-14T10:00:00Z",
+        "details": {
+            "source": "Commercial Loan Application Form (PDF)",
+            "fileSize": "2.4 MB",
+            "mimeType": "application/pdf",
+            "sha256": "8f3b2c...a891f",
+            "extractedFields": {
+                "applicantName": "Apex Retail Solutions Inc.",
+                "requestedAmount": 2500000,
+                "annualRevenue": 12000000,
+                "creditScore": 680,
+                "yearsEstablished": 5
+            }
+        }
+    },
+    {
+        "step": 2,
+        "title": "Fact Layouter & OCR Alignment",
+        "status": "completed",
+        "timestamp": "2026-07-14T10:00:02Z",
+        "details": {
+            "model": "GroundSet LayoutParser v2.1",
+            "confidence": "99.4%",
+            "boundingPolygon": "Match found on Page 3, Section 4.2",
+            "factsExtracted": [
+                {
+                    "fact": "Loan Amount",
+                    "val": 2500000,
+                    "confidence": 1.0
+                },
+                {
+                    "fact": "Credit Score",
+                    "val": 680,
+                    "confidence": 0.98
+                },
+                {
+                    "fact": "Annual Revenue",
+                    "val": 12000000,
+                    "confidence": 0.99
+                }
+            ]
+        }
+    },
+    {
+        "step": 3,
+        "title": "Deterministic Policy Evaluation",
+        "status": "completed",
+        "timestamp": "2026-07-14T10:00:03Z",
+        "details": {
+            "policyName": "Commercial underwriting rules v4.2",
+            "totalRulesEvaluated": 4,
+            "rulesPassed": 3,
+            "rulesFailed": 1,
+            "matchedRules": [
+                {
+                    "ruleId": "RULE_MIN_CREDIT",
+                    "description": "Credit Score >= 650",
+                    "outcome": "passed"
+                },
+                {
+                    "ruleId": "RULE_MIN_REVENUE",
+                    "description": "Annual Revenue >= $2,000,000",
+                    "outcome": "passed"
+                },
+                {
+                    "ruleId": "RULE_LTV_RATIO",
+                    "description": "Collateral coverage >= 80%",
+                    "outcome": "passed"
+                },
+                {
+                    "ruleId": "RULE_HIGH_VELOCITY_CHECK",
+                    "description": "Loan amount exceeds auto-approve threshold ($1,000,000)",
+                    "outcome": "failed (Triggers Manual Review)"
+                }
+            ]
+        }
+    },
+    {
+        "step": 4,
+        "title": "Human Operator Escalation",
+        "status": "completed",
+        "timestamp": "2026-07-14T10:05:12Z",
+        "details": {
+            "escalationReason": "Automated system cap of $1M exceeded.",
+            "reviewer": "Sarah Connor (Risk Underwriter II)",
+            "reviewActions": [
+                "Verified financial statements uploaded in PDF page 7",
+                "Confirmed cash reserves exceed $800k in corporate accounts"
+            ],
+            "reviewerNotes": "Approved manually based on strong cash flow statement and solid asset backing.",
+            "decision": "Approved (Overridden)"
+        }
+    },
+    {
+        "step": 5,
+        "title": "Decision Dispatched & Synced",
+        "status": "completed",
+        "timestamp": "2026-07-14T10:05:15Z",
+        "details": {
+            "destination": "Salesforce CRM + Core Banking API",
+            "syncStatus": "success",
+            "payload": {
+                "applicationId": "APP-2026-904",
+                "finalDecision": "Approved",
+                "approvedBy": "Sarah Connor",
+                "ruleSetVersion": "4.2",
+                "auditLogHash": "d80b2a8d3e912bc78f..."
+            }
+        }
+    }
+]

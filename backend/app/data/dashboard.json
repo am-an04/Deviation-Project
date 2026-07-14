@@ -1,0 +1,41 @@
+{
+    "metrics": {
+        "manualReviewReduction": {
+            "value": "89.4%",
+            "sublabel": "Down from 100% manual review",
+            "trend": "down"
+        },
+        "decisionSpeed": {
+            "value": "12.4s",
+            "sublabel": "Median processing latency",
+            "trend": "down"
+        },
+        "complianceReadiness": {
+            "value": "100%",
+            "sublabel": "Traceable audit history",
+            "trend": "static"
+        },
+        "averageROI": {
+            "value": "342%",
+            "sublabel": "Net margin return in Year 1",
+            "trend": "up"
+        }
+    },
+    "comparisons": [
+        {
+            "category": "Audit Prep",
+            "before": "3-4 weeks gathering document copies, parsing logs, and reconciling manual decisions.",
+            "after": "10 minutes. Click 'Download Audit Package' to output full JSON/PDF traces for any period."
+        },
+        {
+            "category": "Decision Drift",
+            "before": "Different human underwriters approve or decline similar profiles depending on variance.",
+            "after": "Mathematical consistency. 100% deterministic code guarantees identical profiles yield identical decisions."
+        },
+        {
+            "category": "Integration Speed",
+            "before": "Months spent custom-training fragile models that fail unexpectedly on invoice format shifts.",
+            "after": "Deploy GroundSet microservice. Standard schema validation links layout elements with system inputs."
+        }
+    ]
+}

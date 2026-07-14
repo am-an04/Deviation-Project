@@ -1,0 +1,122 @@
+{
+    "cro": {
+        "role": "cro",
+        "title": "Chief Risk Officer",
+        "focus": "Compliance, Governance, Audit, & Trust",
+        "hero": {
+            "headline": "Mitigate enterprise risk with complete, auditable certainty.",
+            "subheadline": "Stop relying on black-box predictions. GroundSet provides clear reasoning, deterministic business rules, and 100% human-in-the-loop verify-ability."
+        },
+        "features": [
+            {
+                "title": "Deterministic Policy Enforcement",
+                "description": "Rules run without exceptions, hallucination, or variance. 100% auditable policies guarantees consistency across all operations."
+            },
+            {
+                "title": "Dual-Evidence Provenance",
+                "description": "Every automated decision maps directly back to source documents and defined legislative controls."
+            },
+            {
+                "title": "Human Review Loops",
+                "description": "Seamlessly route high-complexity or border cases to expert human eyes, keeping compliance flawless."
+            }
+        ],
+        "testimonial": {
+            "quote": "GroundSet transformed our audit preparation. What used to take months of manual document sampling is now done in minutes with full traceability.",
+            "author": "Marcus Sterling",
+            "position": "CRO at Vertex Capital"
+        },
+        "demoType": "timeline",
+        "cta": "Request Audit Demo"
+    },
+    "cto": {
+        "role": "cto",
+        "title": "Chief Technology Officer",
+        "focus": "Architecture, Integration, & Security",
+        "hero": {
+            "headline": "Decouple AI ingestion from core business logic stability.",
+            "subheadline": "Keep your system deterministic. GroundSet processes unstructured data, matches layout facts, and invokes clean JSON-based rule execution inside your sovereign cloud."
+        },
+        "features": [
+            {
+                "title": "Zero Lock-in OCR & Parsing",
+                "description": "Extract raw structures from complex forms without being locked into a single proprietary LLM provider."
+            },
+            {
+                "title": "Stateless Microservices",
+                "description": "Deploy via Docker anywhere. High throughput and sub-100ms response times for transactional systems."
+            },
+            {
+                "title": "Secure sovereign deployments",
+                "description": "Runs on-premise or inside your VPC. Customer data never leaf your strict regulatory container."
+            }
+        ],
+        "testimonial": {
+            "quote": "BPOptima's GroundSet has the cleanest developer experience for rules setup. It integrates nicely with our REST API architecture and scales effortlessly.",
+            "author": "Elena Rostova",
+            "position": "CTO at PayFlow Systems"
+        },
+        "demoType": "architecture",
+        "cta": "View Technical Specs"
+    },
+    "engineer": {
+        "role": "engineer",
+        "title": "Lead Software Engineer",
+        "focus": "API, Schemas, & Custom Rules Playground",
+        "hero": {
+            "headline": "Write rules as code, not prompts that hallucinate.",
+            "subheadline": "Run deterministic policy evaluations using standardized schemas. Debug rules with full trace graphs, structured logs, and typed payload outputs."
+        },
+        "features": [
+            {
+                "title": "Type-Safe Rules Definition",
+                "description": "Define fields with standard Pydantic validation. Know exactly what inputs your rules expect and enforce clean boundaries."
+            },
+            {
+                "title": "Instant Local Debugging",
+                "description": "Detailed trace outputs for rule evaluation showing which condition succeeded, which failed, and the source fact matching."
+            },
+            {
+                "title": "Clean SDK Integration",
+                "description": "Install from npm or pip. Bootstrap a local dev environment in under five minutes using our CLI."
+            }
+        ],
+        "testimonial": {
+            "quote": "Prompts are too flaky for financial approvals. Writing rules as structured assertions is a breath of fresh air for developers.",
+            "author": "Alex Mercer",
+            "position": "Principal Architect at Ramp"
+        },
+        "demoType": "playground",
+        "cta": "Explore the SDK docs"
+    },
+    "investor": {
+        "role": "investor",
+        "title": "Financial Investor",
+        "focus": "Business Velocity, ROI, & Enterprise Adoption",
+        "hero": {
+            "headline": "Unlock massive margins with auditable operations.",
+            "subheadline": "GroundSet enables 10x faster decision processing while slashing manual auditing expenses. Read about our market traction and structural cost reductions."
+        },
+        "features": [
+            {
+                "title": "90% Review Time Reduction",
+                "description": "Automate routine verifications. Let human operators zoom in on high-leverage edge cases immediately."
+            },
+            {
+                "title": "Perfect Compliance Record",
+                "description": "Zero regulatory penalties since GroundSet deployment. Retain complete historical audit records for standard reporting."
+            },
+            {
+                "title": "High Margin Scale",
+                "description": "Expand transactional volumes without head-count scaling. Operational costs stay flat while processing grows."
+            }
+        ],
+        "testimonial": {
+            "quote": "BPOptima's core approach of building transparent, auditable business logic represents the next wave of enterprise SaaS infrastructure.",
+            "author": "Sarah Jenkins",
+            "position": "Managing Director at Vanguard Growth"
+        },
+        "demoType": "dashboard",
+        "cta": "Download Pitch Deck"
+    }
+}

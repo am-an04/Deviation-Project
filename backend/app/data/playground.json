@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Standard Approved Loan",
+        "inputs": {
+            "income": 120000,
+            "creditScore": 720,
+            "employment": "Employed",
+            "loanAmount": 45000
+        }
+    },
+    {
+        "name": "Low Credit Decline",
+        "inputs": {
+            "income": 85000,
+            "creditScore": 580,
+            "employment": "Employed",
+            "loanAmount": 20000
+        }
+    },
+    {
+        "name": "High Debt-to-Income Escalation",
+        "inputs": {
+            "income": 60000,
+            "creditScore": 690,
+            "employment": "Self-Employed",
+            "loanAmount": 300000
+        }
+    },
+    {
+        "name": "Unemployed Reject",
+        "inputs": {
+            "income": 40000,
+            "creditScore": 660,
+            "employment": "Unemployed",
+            "loanAmount": 5000
+        }
+    }
+]
