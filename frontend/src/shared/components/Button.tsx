@@ -1,6 +1,5 @@
 import React from 'react';
 import { clsx } from 'clsx';
-import { PureComponent } from 'react'; // not needed, clean hook is standard
 import { Slot } from '@radix-ui/react-slot';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
