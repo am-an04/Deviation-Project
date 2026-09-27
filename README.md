@@ -48,6 +48,26 @@ Deviation Register & Detail Inspection View
 
 ---
 
+## Screenshots
+
+### 1. Quality Management Dashboard
+Real-time enterprise overview tracking active deviation counts, risk categorizations (Critical, Major, Moderate), and recent deviation activity.
+![Quality Management Dashboard](screenshots/01-quality-dashboard.png)
+
+### 2. PDF Document Ingestion & Extraction Workflow
+Attach initial deviation reports with instant PyMuPDF text parsing, analysis status tracking, and automated form population.
+![PDF Document Ingestion](screenshots/02-pdf-upload-intake.png)
+
+### 3. AI Assessment & Human Confirmation
+Transparent AI-assisted severity suggestions backed by deterministic rule checks and regulatory guideline reasoning with interactive human confirmation.
+![AI Assessment and Review](screenshots/03-ai-assessment-panel.png)
+
+### 4. Deviation Detail & Record Inspection
+Detailed inspection view displaying structured deviation parameters, containment actions, source document references, and final confirmed severity.
+![Deviation Details Inspection](screenshots/04-deviation-inspection-detail.png)
+
+---
+
 ## 3. Technology Stack
 
 ### Frontend
