@@ -1,57 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: 'class',
-    content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
-    ],
-    theme: {
-        extend: {
-            colors: {
-                border: "hsl(var(--border))",
-                input: "hsl(var(--input))",
-                ring: "hsl(var(--ring))",
-                background: "hsl(var(--background))",
-                foreground: "hsl(var(--foreground))",
-                primary: {
-                    DEFAULT: "hsl(var(--primary))",
-                    foreground: "hsl(var(--primary-foreground))",
-                },
-                secondary: {
-                    DEFAULT: "hsl(var(--secondary))",
-                    foreground: "hsl(var(--secondary-foreground))",
-                },
-                destructive: {
-                    DEFAULT: "hsl(var(--destructive))",
-                    foreground: "hsl(var(--destructive-foreground))",
-                },
-                muted: {
-                    DEFAULT: "hsl(var(--muted))",
-                    foreground: "hsl(var(--muted-foreground))",
-                },
-                accent: {
-                    DEFAULT: "hsl(var(--accent))",
-                    foreground: "hsl(var(--accent-foreground))",
-                },
-                popover: {
-                    DEFAULT: "hsl(var(--popover))",
-                    foreground: "hsl(var(--popover-foreground))",
-                },
-                card: {
-                    DEFAULT: "hsl(var(--card))",
-                    foreground: "hsl(var(--card-foreground))",
-                },
-            },
-            borderRadius: {
-                lg: "var(--radius)",
-                md: "calc(var(--radius) - 2px)",
-                sm: "calc(var(--radius) - 4px)",
-            },
-            fontFamily: {
-                sans: ["Outfit", "Inter", "sans-serif"],
-                mono: ["JetBrains Mono", "monospace"],
-            },
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        qms: {
+          primary: "#174A7E",
+          dark: "#123A63",
+          bg: "#F5F7FA",
+          card: "#FFFFFF",
+          text: "#17212B",
+          secondary: "#5B6875",
+          muted: "#8A96A3",
+          border: "#DCE2E8",
+          input: "#CBD4DD",
+          ai: "#2F6FED",
+          aiLight: "#EEF4FF",
+          success: "#247A45",
+          warning: "#A15C00",
+          error: "#B42318",
         },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      borderRadius: {
+        card: "8px",
+        input: "6px",
+        btn: "6px",
+        badge: "12px",
+      }
     },
-    plugins: [],
+  },
+  plugins: [],
 }

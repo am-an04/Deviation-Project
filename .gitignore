@@ -1,27 +1,32 @@
-# Node.js
-node_modules/
-dist/
-.npm
-npm-debug.log*
+# Environment & Secrets
+.env
+.env.local
+*.env
 
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
-.pytest_cache/
-.venv/
+*.so
+.Python
+backend/venv/
 venv/
 ENV/
-env/
+*.db
+*.sqlite3
+backend/chroma_data/
+chroma_data/
 
-# IDE / System
-.idea/
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.npm/
+
+# IDE & OS
 .vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
-*.swo
+.idea/
 .DS_Store
 Thumbs.db
+*.log
